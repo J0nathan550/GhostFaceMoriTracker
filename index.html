@@ -48,42 +48,45 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="gallery/ghostFace.webp" alt="Ghostface">
-            <h1>Ghostface Mori Tracker</h1>
-            <p>Track all the victims whose terrified faces you captured with your camera.</p>
-            
-            <div class="controls">
-                <div class="search-container">
-                    <input type="text" class="search-bar" placeholder="Search survivors..." id="searchBar">
-                </div>
-                <div class="control-buttons">
-                    <button class="btn btn-select-all" id="selectAllBtn">Select All</button>
-                    <button class="btn btn-deselect-all" id="deselectAllBtn">Deselect All</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="survivors-grid" id="survivorsGrid">
-        </div>
+	<div class="container">
+		<div class="header">
+			<img src="gallery/ghostFace.webp" alt="Ghostface">
+			<h1>Ghostface Mori Tracker</h1>
+			<p>Track all the victims whose terrified faces you captured with your camera.</p>
 
-        <div class="stats" id="stats">
-            <h3>Mori Statistics</h3>
-            <p id="statsText">0 out of 0 survivors tracked</p>
-        </div>
-    </div>
+			<div class="controls">
+				<div class="search-container">
+					<input type="text" class="search-bar" placeholder="Search survivors..." id="searchBar">
+				</div>
+				<div class="control-buttons">
+					<button class="btn btn-select-all" id="selectAllBtn">Select All</button>
+					<button class="btn btn-deselect-all" id="deselectAllBtn">Deselect All</button>
+				</div>
+			</div>
+		</div>
 
-    <div id="confirmModal" class="modal">
-        <div class="modal-content">
-            <h3 id="modalTitle">Confirm Action</h3>
-            <p id="modalMessage">Are you sure you want to perform this action?</p>
-            <div class="modal-buttons">
-                <button class="btn" id="confirmBtn">Yes</button>
-                <button class="btn" id="cancelBtn">Cancel</button>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="index.js"></script>
+		<div class="survivors-grid" id="survivorsGrid">
+		</div>
+
+		<div class="stats" id="stats">
+			<h3>Mori Statistics</h3>
+			<p id="statsText">0 out of 0 survivors tracked</p>
+		</div>
+	</div>
+
+	<div id="confirmModal" class="modal">
+		<div class="modal-content">
+			<h3 id="modalTitle">Confirm Action</h3>
+			<p id="modalMessage">Are you sure you want to perform this action?</p>
+			<div class="modal-buttons">
+				<button class="btn" id="confirmBtn">Yes</button>
+				<button class="btn" id="cancelBtn">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<div class="counter-wrapper" id="counterWrapper">
+		<script type="text/javascript" src="https://counter.websiteout.com/js/6/15/0/1"></script>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

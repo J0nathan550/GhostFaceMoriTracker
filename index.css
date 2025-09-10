@@ -245,6 +245,7 @@ body {
 .stats {
 	text-align: center;
 	margin-top: 40px;
+	margin-bottom: 60px;
 	padding: 20px;
 	background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9));
 	border-radius: 15px;
@@ -260,6 +261,40 @@ body {
 .stats p {
 	color: #cccccc;
 	font-size: 1.1em;
+}
+
+body > div:last-child,
+body > script + div,
+div[style*="text-align: center"] {
+	position: fixed !important;
+	bottom: 20px !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	background: rgba(0, 0, 0, 0.8) !important;
+	padding: 10px 20px !important;
+	border-radius: 20px !important;
+	border: 1px solid #333333 !important;
+	backdrop-filter: blur(10px) !important;
+	z-index: 100 !important;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+div:has(img[src*="websiteout.com"]),
+div:has(a[href*="websiteout.com"]) {
+	position: fixed !important;
+	bottom: 20px !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	background: rgba(0, 0, 0, 0.8) !important;
+	backdrop-filter: blur(10px) !important;
+	z-index: 100 !important;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+div[style*="text-align: center"] * {
+	color: #cccccc !important;
+	font-size: 12px !important;
+	text-decoration: none !important;
 }
 
 .modal {
@@ -326,5 +361,15 @@ body {
 
 	.control-buttons {
 		justify-content: center;
+	}
+
+	body > div:last-child,
+	body > script + div,
+	div[style*="text-align: center"],
+	div:has(img[src*="websiteout.com"]),
+	div:has(a[href*="websiteout.com"]) {
+		bottom: 10px !important;
+		padding: 8px 16px !important;
+		font-size: 11px !important;
 	}
 }
