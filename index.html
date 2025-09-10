@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="Ghostface Mori Tracker">
+	<meta name="description" content="Track all the victims whose terrified faces you captured with your camera.">
+	<meta name="keywords" content="Dead by Daylight, Ghostface, Mori, Survivor Tracker, DBD, Horror Game, Killer Tracker, Gaming Tool">
+	<meta name="author" content="J0nathan550, Ni-Wi-Duh">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://gfmoritracker.fun">
+	<meta property="og:title" content="Ghostface Mori Tracker">
+	<meta property="og:description" content="Track all the victims whose terrified faces you captured with your camera.">
+	<meta property="og:image" content="https://gfmoritracker.fun/gallery/ghostFace.webp">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Ghostface Mori Tracker">
+	<meta property="og:site_name" content="Ghostface Mori Tracker">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://gfmoritracker.fun">
+	<meta property="twitter:title" content="Ghostface Mori Tracker - Dead by Daylight">
+	<meta property="twitter:description" content="Track all the victims whose terrified faces you captured with your camera.">
+	<meta property="twitter:image" content="https://gfmoritracker.fun/gallery/ghostFace.webp">
+	<meta property="twitter:image:alt" content="Ghostface Mori Tracker Interface">
+	<meta name="twitter:creator" content="@j0nathan550">
+	<meta name="twitter:site" content="@j0nathan550">
+	<meta name="application-name" content="Ghostface Mori Tracker">
+	<meta name="subject" content="Dead by Daylight Gaming Tool">
+	<meta name="rating" content="Teen">
+	<meta name="referrer" content="origin-when-cross-origin">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="Ghostface Mori Tracker">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="copyright" content="J0nathan550 2025">
+	<meta name="distribution" content="global">
+	<meta name="rating" content="general">
+	<meta property="og:locale" content="en_US">
+    <title>Ghostface Mori Tracker</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="gallery/ghostFace.webp" alt="Ghostface">
+            <h1>Ghostface Mori Tracker</h1>
+            <p>Track all the victims whose terrified faces you captured with your camera.</p>
+            
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search survivors..." id="searchBar">
+                </div>
+                <div class="control-buttons">
+                    <button class="btn btn-select-all" id="selectAllBtn">Select All</button>
+                    <button class="btn btn-deselect-all" id="deselectAllBtn">Deselect All</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="survivors-grid" id="survivorsGrid">
+        </div>
+
+        <div class="stats" id="stats">
+            <h3>Mori Statistics</h3>
+            <p id="statsText">0 out of 0 survivors tracked</p>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Confirm Action</h3>
+            <p id="modalMessage">Are you sure you want to perform this action?</p>
+            <div class="modal-buttons">
+                <button class="btn" id="confirmBtn">Yes</button>
+                <button class="btn" id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
