@@ -336,6 +336,21 @@ div[style*="text-align: center"] * {
 	padding: 10px 20px;
 }
 
+.counter-wrapper {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	text-align: center;
+}
+
+.counter-wrapper * {
+	color: #cccccc !important;
+	font-size: 12px !important;
+	text-decoration: none !important;
+}
+
 @media (max-width: 768px) {
 	.header h1 {
 		font-size: 2.5em;
@@ -361,6 +376,15 @@ div[style*="text-align: center"] * {
 
 	.control-buttons {
 		justify-content: center;
+	}
+	
+	.counter-wrapper {
+		bottom: 10px;
+		padding: 8px 16px;
+	}
+
+	.counter-wrapper * {
+		font-size: 11px !important;
 	}
 
 	body > div:last-child,
